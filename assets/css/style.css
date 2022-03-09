@@ -1,0 +1,61 @@
+/* --------- General style */
+
+body {
+    background-color:blueviolet;
+    background: ("assets/images/horizon.jpg") no repeat center center;
+    font-family: "nova square", sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* --------- Heading */
+
+.heading {
+    font-size: 3.5rem;
+}
+
+/* --------- Quiz layout */
+
+.quiz-container {
+
+}
+
+.quiz-question-container {
+
+}
+
+.quiz-question {
+
+}
+
+.quiz-selection {
+
+}
+
+.quiz-progress {
+
+}
+
+.quiz-results {
+
+}
+
+/* --------- Buttons */
+
+.main-buttons {
+
+}
+
+.btn {
+
+}
+
+.btn--gray {
+
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #1069c2;
+}
+
