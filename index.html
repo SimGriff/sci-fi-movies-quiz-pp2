@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sci-Fi Movies Quiz</title>
 </head>
+
 <body>
+    <div class="quiz-container">
+        <h1>Sci-Fi Movies Quiz</h1><!--Not sure if I want a logo here?-->
+        <div id ="quiz-question-container">
+            <div id="quiz-question">
+                <h4>What is the answer to this Sci-Fi Question?</h4>
+            </div>
+            <div id="quiz-selection">
+                <!--Buttons need to go in here * 4-->
+                <button class="btn">Answer A</button>
+                <button class="btn">Answer B</button>
+                <button class="btn">Answer C</button>
+                <button class="btn">Answer D</button>
+            </div>
+            <div id ="quiz-progress">
+                <h4>Question 1 of 10</h4>
+            </div>
+        </div>
+        <div class="main-buttons">
+            <!--Start/begin and next buttons-->
+            <button class=""btn btn--gray>Start</button>
+            <button class=""btn btn--gray>Next</button>
+        </div>
+        <div id="quiz-results">
+            <h3>Your Score</h3><!--Placeholder text, I want javascript to control this-->
+                <p>9/10</p><!--Placeholder text, I want javascript to control this-->
+                <hr>
+                <p>Well Done!</p><!--Placeholder text, I want javascript to control this-message to change depending on result-->
+        </div>
+    </div>
+
     
     <script src="assets/js/script.js"></script>
 </body>
