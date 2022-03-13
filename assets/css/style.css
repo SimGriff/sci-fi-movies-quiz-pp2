@@ -3,6 +3,7 @@
 body {
     /*background-color:blueviolet;*/
     background: url("../images/horizon.jpg") no-repeat center center;
+    background-size: cover;
     font-family: "nova square", sans-serif;
     color: #fff;
     text-align: center;
