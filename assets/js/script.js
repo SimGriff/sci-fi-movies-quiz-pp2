@@ -19,4 +19,3 @@ const questions = [
         ]
     },
 ];
-console.log (questions);
