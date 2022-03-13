@@ -49,3 +49,25 @@ The wireframes for the Sci-Fi Movies Quiz were produced using Balsamiq.
   - [Start Page](docs/wireframes/start-page-desktop.png)
   - [Questions Page](docs/wireframes/questions-page-desktop.png)
   - [Score Page](docs/wireframes/score-page-desktop.png)
+
+## Features
+
+The Sci-Fi Movies Quiz is made up of 3 main sections.
+### Start page
+![Screenshot of Start Page](docs/screenshots/………….png) Add Screen Shots on Completion of Quiz
+The start page invites the user to begin the game. The background image draws the users attention with the eye catching image displaying a sci fi theme. This immediately conveys the subject of the site.
+When the user clicks on the Start Button, they are taken to the question and answers screen. The white text and the same background image, with transparent overlay box are used on all three pages and provide continuity throughout the quiz pages.
+### Questions and Answers Page 
+![Screenshot of Questions and Answers Page](docs/screenshots/………….png) Add Screen Shots on Completion of Quiz
+This page provides a single question and multiple choice options for the answer with four answer buttons. 
+On click of the mouse the user makes their selection by selecting one of the answer buttons, they are then provided with instant feedback that informs them if the answer is correct or not.  This is shown with the correct button being highlighted green and all the correct answers highlighted red. The user is remined of their own selection because the selected button has a clear orange border. 
+The user is then presented with the next button underneath the answers that allows them to proceed to the next question.
+The users progress through the game is also displayed towards the bottom of the screen, e.g. Question 1 of 10, notifying the user what question they are on and the total number of questions.
+### Results Page
+![Screenshot of Results Page](docs/screenshots/…………..png) Add Screen Shots on Completion of Quiz
+For the final screen, the users score is provided with a message and a restart button inviting the user to try the quiz again.
+
+## Future Features
+
+* Additional levels of difficulty, easy, average, hard to challenge the user. 
+* Additional categories including Sci-Fi TV questions, Sci Fi Literature etc.
