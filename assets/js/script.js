@@ -32,7 +32,17 @@ function quizProgress () {
 }
 
 function displayQuestion () {
-
+    questionElement.innerText = question.question;
+    question.answers.forEach(answers => {
+        const button = document.createElement("button");
+        button.innerText = answers.text;
+        button.classList.add("btn");
+        if (answers.correct) {
+            button.dataset.correct = answers.correct;
+        }
+        button.addEventListener("click", chooseAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 function chooseAnswer () {
 
@@ -47,7 +57,9 @@ function clearAnswerColor () {
 }
 
 function getNextQuestion () {
-
+    resetPage();
+    displayQuestions(shuffledQuestions[currentQuestionIndex]);
+    questionNumber++;
 }
 
 function resetPage () {
