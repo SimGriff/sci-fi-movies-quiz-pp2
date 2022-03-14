@@ -27,11 +27,11 @@ function startQuiz () {
     getNextQuestion();
 }
 
-function quizProgress () {
+function quizProgress() {
 
 }
 
-function displayQuestion () {
+function displayQuestion() {
     questionElement.innerText = question.question;
     question.answers.forEach(answers => {
         const button = document.createElement("button");
@@ -44,7 +44,7 @@ function displayQuestion () {
         answerButtonsElement.appendChild(button);
     });
 }
-function chooseAnswer (event) {
+function chooseAnswer(event) {
     const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
@@ -59,21 +59,27 @@ function chooseAnswer (event) {
     }
 }
 
-function setAnswerColor () {
-
+function setAnswerColor(element, correct) {
+    clearStatusClass(element);
+    if(correct) {
+        element.classList.add("btn-correct");
+    } else {
+        element.classList.add("btn-incorrect");
+    }
 }
 
-function clearAnswerColor () {
-    
+function clearAnswerColor(element) {
+    element.classList.remove("btn-correct");
+    element.classList.remove("btn-incorrect");
 }
 
-function getNextQuestion () {
+function getNextQuestion() {
     resetPage();
     displayQuestions(shuffledQuestions[currentQuestionIndex]);
     questionNumber++;
 }
 
-function resetPage () {
+function resetPage() {
     clearStatusClass(document.body); 
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
