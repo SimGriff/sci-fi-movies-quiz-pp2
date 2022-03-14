@@ -8,6 +8,15 @@ const quizProgress = document.getElementById("quiz-progress");
 const quizResults = document.getElementById("quiz-results");
 const yourScore = document.getElementById("your-score");
 
+let score = 0; /* keeping track of user score (correct answers) */
+
+startButton.addEventListener("click", startQuiz);
+nextButton.addEventListener("click", () => {
+currentQuestionIndex++;
+getNextQuestion();
+quizProgress();
+});
+
 // Main functions
 
 function startQuiz () {
