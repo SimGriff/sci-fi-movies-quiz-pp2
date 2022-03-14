@@ -20,6 +20,7 @@ quizProgress();
 // Main functions
 
 function startQuiz () {
+    quizResults.classList.add("hide");
     startButton.classList.Add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
