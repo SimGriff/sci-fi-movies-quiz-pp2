@@ -44,8 +44,19 @@ function displayQuestion () {
         answerButtonsElement.appendChild(button);
     });
 }
-function chooseAnswer () {
-
+function chooseAnswer (event) {
+    const selectedButton = event.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct);
+    });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove("hide");
+} else {
+    startButton.classList.remove("hide");
+    startButton.innerText="Restart";
+    }
 }
 
 function setAnswerColor () {
@@ -63,7 +74,11 @@ function getNextQuestion () {
 }
 
 function resetPage () {
-
+    clearStatusClass(document.body); 
+    nextButton.classList.add("hide");
+    while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
 }
 
 
