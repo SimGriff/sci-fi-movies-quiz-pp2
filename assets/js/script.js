@@ -20,7 +20,11 @@ quizProgress();
 // Main functions
 
 function startQuiz () {
-
+    startButton.classList.Add("hide");
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    quizContainerElement.classList.remove("hide");
+    getNextQuestion();
 }
 
 function quizProgress () {
