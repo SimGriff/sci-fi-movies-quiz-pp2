@@ -8,10 +8,10 @@ const answerButtonsElement = document.getElementById("quiz-selection");
 const quizResults = document.getElementById("quiz-results");
 const yourScore = document.getElementById("your-score");
 
-let score = 0; /* keeping track of user score (correct answers) */
 let shuffledQuestions;
 let currentQuestionIndex;
 let questionNumber = 0;
+let score = 0; /* keeping track of user score (correct answers) */
 
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
@@ -22,7 +22,7 @@ quizProgress();
 
 // Main functions
 
-function startQuiz () {
+function startQuiz() {
     quizResults.classList.add("hide");
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
@@ -35,7 +35,7 @@ function startQuiz () {
 
 function quizProgress() {
     var questionNumber = currentQuestionIndex+1;
-    var element = document .getElementById("quiz-progress");
+    var element = document.getElementById("quiz-progress");
     element.innerHTML = "Question " + questionNumber + " of " + questions.length;
 }
 
@@ -47,7 +47,7 @@ function correctAnswers(isCorrect) {
 }
 
 function getNextQuestion() {
-    resetState();
+    resetPage();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
     questionNumber++;
 }
@@ -65,6 +65,14 @@ function displayQuestion(question) {
         answerButtonsElement.appendChild(button);
     });
 }
+
+function resetPage() {
+    nextButton.classList.add("hide");
+    while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
 function chooseAnswer() {
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
@@ -103,12 +111,7 @@ function getNextQuestion() {
     questionNumber++;
 }
 
-function resetPage() {
-    nextButton.classList.add("hide");
-    while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
-}
+
 
 
 // My list  of Questions
