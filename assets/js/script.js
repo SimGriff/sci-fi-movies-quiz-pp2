@@ -73,9 +73,10 @@ function resetPage() {
     }
 }
 
-function chooseAnswer() {
+function chooseAnswer(event) {
+    selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body, correct);
+    correctAnswers(correct);/*got really stuck on the score increment - stackoverflow solution to similar problem*/
     Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
     });
@@ -83,9 +84,9 @@ function chooseAnswer() {
     nextButton.classList.remove("hide");
 } else {
     quizResults.classList.remove("hide");
-    quizContainerElement.classList.add("hide");
-    startButton.innerText="Restart";
+    quizResults.innerText = "Your Score " + score + "/" + questions.length + " Well Done!";
     startButton.classList.remove("hide");
+    startButton.innerText="Restart";
     }
 }
 
