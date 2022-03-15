@@ -49,8 +49,7 @@ function displayQuestion() {
         answerButtonsElement.appendChild(button);
     });
 }
-function chooseAnswer(event) {
-    const selectedButton = event.target;
+function chooseAnswer() {
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -59,8 +58,10 @@ function chooseAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
 } else {
-    startButton.classList.remove("hide");
+    quizResults.classList.remove("hide");
+    quizContainerElement.classList.add("hide");
     startButton.innerText="Restart";
+    startButton.classList.remove("hide");
     }
 }
 
