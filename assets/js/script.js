@@ -11,6 +11,7 @@ const yourScore = document.getElementById("your-score");
 let score = 0; /* keeping track of user score (correct answers) */
 let shuffledQuestions;
 let currentQuestionIndex;
+let questionNumber = 0;
 
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
@@ -35,6 +36,14 @@ function quizProgress() {
     var element = document .getElementById("quiz-progress");
     element.innerHTML = "Question " + questionNumber + " of " + questions.length;
 }
+
+function correctAnswers(isCorrect) {
+    if (!isCorrect){
+        return;
+    }
+    score++;
+}
+
 
 function displayQuestion() {
     questionElement.innerText = question.question;
@@ -69,6 +78,7 @@ function setAnswerColor(element, correct) {
     clearStatusClass(element);
     if(correct) {
         element.classList.add("btn-correct");
+        score++;
     } else {
         element.classList.add("btn-incorrect");
     }

@@ -76,7 +76,10 @@ body {
 }
 
 .btn--gray {
-
+    margin-top: 30px;
+    background-color: #484466;
+    border: 1px transparent;
+    border-radius: 40px;
 }
 
 .btn--gray:active,
