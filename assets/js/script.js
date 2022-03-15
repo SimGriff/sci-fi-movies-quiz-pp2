@@ -27,6 +27,7 @@ function startQuiz () {
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
+    score = 0;
     quizProgress();
     quizContainerElement.classList.remove("hide");
     getNextQuestion();
@@ -94,7 +95,6 @@ function clearAnswerColor(element) {
     element.classList.remove("btn-correct");
     element.classList.remove("btn-incorrect");
 
-    }
 }
 
 function getNextQuestion() {
