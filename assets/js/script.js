@@ -51,7 +51,7 @@ function getNextQuestion() {
     questionNumber++;
 }
 
-function displayQuestion() {
+function displayQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answers => {
         const button = document.createElement("button");
@@ -81,7 +81,7 @@ function chooseAnswer() {
 }
 
 function setAnswerColor(element, correct) {
-    clearStatusClass(element);
+    clearAnswerColor(element);
     if(correct) {
         element.classList.add("btn-correct");
         score++;
@@ -93,6 +93,8 @@ function setAnswerColor(element, correct) {
 function clearAnswerColor(element) {
     element.classList.remove("btn-correct");
     element.classList.remove("btn-incorrect");
+
+    }
 }
 
 function getNextQuestion() {
@@ -102,7 +104,6 @@ function getNextQuestion() {
 }
 
 function resetPage() {
-    clearStatusClass(document.body); 
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
