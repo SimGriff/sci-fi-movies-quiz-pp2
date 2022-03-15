@@ -3,8 +3,8 @@ const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const quizContainerElement = document.getElementById("quiz-question-container");
 const questionElement = document.getElementById("quiz-question");
-/*const answerButtonsElement = document.getElementById("quiz-selection");*/
-const quizProgress = document.getElementById("quiz-progress");
+const answerButtonsElement = document.getElementById("quiz-selection");
+/*const quizProgress = document.getElementById("quiz-progress");*/
 const quizResults = document.getElementById("quiz-results");
 const yourScore = document.getElementById("your-score");
 
@@ -24,9 +24,10 @@ quizProgress();
 
 function startQuiz () {
     quizResults.classList.add("hide");
-    startButton.classList.Add("hide");
+    startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
+    quizProgress();
     quizContainerElement.classList.remove("hide");
     getNextQuestion();
 }
@@ -44,6 +45,11 @@ function correctAnswers(isCorrect) {
     score++;
 }
 
+function getNextQuestion() {
+    resetState();
+    displayQuestion(shuffledQuestions[currentQuestionIndex]);
+    questionNumber++;
+}
 
 function displayQuestion() {
     questionElement.innerText = question.question;
