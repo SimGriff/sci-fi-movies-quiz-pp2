@@ -104,6 +104,16 @@ body {
     padding: 10px 20px;
 }
 
+/*javascript will use this class when correct answer given*/
+.btn-correct{
+    background-color: green;
+}
+/*javascript will use this class when incorrect answer given*/
+.btn-incorrect {
+    background-color: red;
+}
+
+
 .hide {
     display: none;
 }
