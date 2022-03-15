@@ -103,17 +103,7 @@ function setAnswerColor(element, correct) {
 function clearAnswerColor(element) {
     element.classList.remove("btn-correct");
     element.classList.remove("btn-incorrect");
-
 }
-
-function getNextQuestion() {
-    resetPage();
-    displayQuestions(shuffledQuestions[currentQuestionIndex]);
-    questionNumber++;
-}
-
-
-
 
 // My list  of Questions
 const questions = [
