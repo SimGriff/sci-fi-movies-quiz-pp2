@@ -9,6 +9,8 @@ const quizResults = document.getElementById("quiz-results");
 const yourScore = document.getElementById("your-score");
 
 let score = 0; /* keeping track of user score (correct answers) */
+let shuffledQuestions;
+let currentQuestionIndex;
 
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
@@ -29,7 +31,9 @@ function startQuiz () {
 }
 
 function quizProgress() {
-
+    var questionNumber = currentQuestionIndex+1;
+    var element = document .getElementById("quiz-progress");
+    element.innerHTML = "Question " + questionNumber + " of " + questions.length;
 }
 
 function displayQuestion() {
