@@ -94,7 +94,6 @@ function setAnswerColor(element, correct) {
     clearAnswerColor(element);
     if(correct) {
         element.classList.add("btn-correct");
-        score++;
     } else {
         element.classList.add("btn-incorrect");
     }
