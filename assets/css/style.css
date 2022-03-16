@@ -18,7 +18,7 @@ body {
 
 /* --------- Quiz layout */
 
-.quiz-container {
+#quiz-container {
     background-color: rgba(3, 18, 114, 0.3);
     box-sizing: border-box;
     justify-content: center;
@@ -29,7 +29,7 @@ body {
     padding: 1rem;
 }
 
-.quiz-question-container {
+#quiz-question-container {
     width: auto;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ body {
     margin: 1rem;
 }
 
-.quiz-selection {
+#quiz-selection {
     font-size: 2.5rem;
     justify-content: center;
 }
