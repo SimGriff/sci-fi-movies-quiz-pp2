@@ -22,6 +22,7 @@ quizProgress();
 
 // Main functions
 
+// Starts running the quiz
 function startQuiz() {
     quizResults.classList.add("hide");
     startButton.classList.add("hide");
@@ -33,12 +34,14 @@ function startQuiz() {
     getNextQuestion();
 }
 
+// To show user current question no. & total questions
 function quizProgress() {
     var questionNumber = currentQuestionIndex+1;
     var element = document.getElementById("quiz-progress");
     element.innerHTML = "Question " + questionNumber + " of " + questions.length;
 }
 
+// Increments score
 function correctAnswers(isCorrect) {
     if (!isCorrect){
         return;
@@ -46,12 +49,14 @@ function correctAnswers(isCorrect) {
     score++;
 }
 
+// Prepares next question
 function getNextQuestion() {
     resetPage();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
     questionNumber++;
 }
 
+//
 function displayQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answers => {
@@ -66,6 +71,7 @@ function displayQuestion(question) {
     });
 }
 
+// Resets everything to default state before next question
 function resetPage() {
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
@@ -73,6 +79,7 @@ function resetPage() {
     }
 }
 
+// Responds to users selection, providing feedback on correct/incorrect answer
 function chooseAnswer(event) {
     selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
@@ -88,6 +95,7 @@ function chooseAnswer(event) {
     }
 }
 
+// Sets selected button color to green/red if answer correct/incorrect
 function setAnswerColor(element, correct) {
     clearAnswerColor(element);
     if(correct) {
@@ -97,6 +105,7 @@ function setAnswerColor(element, correct) {
     }
 }
 
+// Resets button color to default ready for next question
 function clearAnswerColor(element) {
     element.classList.remove("btn-correct");
     element.classList.remove("btn-incorrect");
