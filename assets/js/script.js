@@ -77,9 +77,7 @@ function chooseAnswer(event) {
     selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
     correctAnswers(correct);/*got really stuck on the score increment - stackoverflow solution to similar problem*/
-    Array.from(answerButtonsElement.children).forEach(button => {
-    setAnswerColor(button, button.dataset.correct);
-    });
+    setAnswerColor(selectedButton, correct);/*got really stuck on limiting color change to selected button - stackoverflow solution to similar problem*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
 } else {
