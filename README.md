@@ -2,7 +2,7 @@
 
 /*Screenshot of mockup*/
 
-View the deployed site here: /*Link to Live Website*/
+View the deployed site here: https://simgriff.github.io/sci-fi-movies-quiz-pp2/
 
 ## Introduction
 The Sci-Fi movies Quiz game is a multiple choice quiz that tests the user’s knowledge of science fiction movies. The aim of the website was to build a fun, responsive quiz using JavaScript. It is designed to be responsive and accessible on a range of devices, ensuring that it leads to an engaging user experience. 
@@ -29,7 +29,8 @@ Images of Mobile, Tablet, Desktop skins for site here.
 * Design
 
   * Colour Scheme
-    1. All text for the quiz is white #ffffff as it stands out against the background ensuring excellent readability. A semi-transparent box contains the quiz itself using rgba (3, 18, 114, 0.3) overlapping the dark background image, ensuring excellent readability. 
+    1. All main text for the quiz is white #ffffff as it stands out against the background ensuring excellent readability. A semi-transparent box contains the quiz itself using rgba (3, 18, 114, 0.3) overlapping the dark background image, ensuring excellent readability. 
+    2. All text within the buttons is black (#000000), which  contrast against the light neutral background color. When selected the buttons change to green or red with the dark text standing out well against the background.
   * Typography
     1. The Nova Square font from [Google Fonts](https://fonts.google.com/) is the main font used throughout the Quiz with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The futuristic appearance of the font was chosen as it perfectly matched the science fiction subject matter.
     
