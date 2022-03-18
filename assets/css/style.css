@@ -73,15 +73,10 @@ body {
     border: 1px transparent;
 }
 
-
-.btn:active {
-    border: 2px solid orange;
-}
-.btn:hover {
-
-}
-.btn:focus {
-    outline: none;
+.btn:hover,
+.bt:focus {
+    background-color: rgba(3, 18, 114, 0.1);
+    border: solid 2px #fff;
 }
 
 .btn--gray {
@@ -110,7 +105,11 @@ body {
     border: 1px transparent;
 }
 
-
+.start-btn:hover,
+.next-btn:focus {
+        background-color: rgba(3, 18, 114, 0.1);
+        border: solid 2px #fff;
+}
 /*javascript will use this class when correct answer given*/
 .btn-correct{
     background-color: green;
