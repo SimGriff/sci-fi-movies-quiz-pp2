@@ -74,7 +74,7 @@ body {
 }
 
 .btn:hover,
-.bt:focus {
+.btn:focus {
     background-color: rgba(3, 18, 114, 0.1);
     border: solid 2px #fff;
 }
@@ -106,8 +106,14 @@ body {
 }
 
 .start-btn:hover,
+.start-btn:focus {
+        /*background-color: rgba(3, 18, 114, 0.1);*/
+        border: solid 2px #fff;
+}
+
+.next-btn:hover,
 .next-btn:focus {
-        background-color: rgba(3, 18, 114, 0.1);
+        /*background-color: rgba(3, 18, 114, 0.1);*/
         border: solid 2px #fff;
 }
 /*javascript will use this class when correct answer given*/
