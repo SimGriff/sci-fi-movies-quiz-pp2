@@ -14,6 +14,7 @@ body {
 .heading {
     font-size: 3rem;
     margin: 0;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* --------- Quiz layout */
@@ -64,10 +65,11 @@ body {
 .btn {
     width: 18rem;
     height: 3rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     background-color:rgb(129 143 232 0.8);
     border-radius: 20px;
     margin: 0.5rem;
+    border: 1px transparent;
 }
 
 
@@ -99,10 +101,11 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     width: 12rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     background-color:rgb(129 143 232 0.8);
     border-radius: 20px;
     margin: 0.5rem;
+    border: 1px transparent;
 }
 
 
