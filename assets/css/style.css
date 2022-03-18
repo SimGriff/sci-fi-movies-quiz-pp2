@@ -27,7 +27,8 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 #quiz-question-container {
@@ -75,7 +76,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: rgba(3, 18, 114, 0.1);
+    /*background-color: rgba(3, 18, 114, 0.1);*/
     border: solid 2px #fff;
 }
 
@@ -86,10 +87,10 @@ body {
     border-radius: 40px;
 }
 
-.btn--gray:active,
+/*.btn--gray:active,
 .btn--gray:hover {
     background-color: #1069c2;
-}
+}*/
 
 .start-btn,
 .next-btn {
@@ -98,23 +99,26 @@ body {
     color:#000000;
     padding: 10px 20px;
     width: 8rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     /*background-color:rgb(129 143 232 0.8);*/
     border-radius: 20px;
-    margin: 0.5rem;
+    margin: 0.2rem;
     border: 1px transparent;
 }
 
 .start-btn:hover,
 .start-btn:focus {
-        /*background-color: rgba(3, 18, 114, 0.1);*/
-        border: solid 2px #fff;
+        background-color: rgba(3, 18, 114, 0.1);
+        color: #fff;
+        /*border: 2px #000000;*/
 }
 
 .next-btn:hover,
 .next-btn:focus {
-        /*background-color: rgba(3, 18, 114, 0.1);*/
-        border: solid 2px #fff;
+        background-color: rgba(3, 18, 114, 0.1);
+        color: #fff;
+        /*border: solid 1px #fff;*/
+
 }
 /*javascript will use this class when correct answer given*/
 .btn-correct{
