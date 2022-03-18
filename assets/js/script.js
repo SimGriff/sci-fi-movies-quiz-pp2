@@ -86,14 +86,24 @@ function chooseAnswer(event) {
     correctAnswers(correct);/*got really stuck on the score increment - stackoverflow solution to similar problem*/
     setAnswerColor(selectedButton, correct);/*got really stuck on limiting color change to selected button - stackoverflow solution to similar problem*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    disable();
     nextButton.classList.remove("hide");
 } else {
     quizResults.classList.remove("hide");
+    disable();
     quizResults.innerText = "Your Score " + score + "/" + questions.length + " Well Done!";
     startButton.classList.remove("hide");
     startButton.innerText="Restart";
     }
 }
+
+// from stackoverflow & W3Schools this disabled all buttons including next.Changed start/next to have their own class to fix
+function disable() {
+    let buttons = document.querySelectorAll('.btn') /*selects all btn class*/
+    for(let i = 0; i < buttons.length; i++){
+        buttons[i].disabled = true;
+    }
+  }
 
 // Sets selected button color to green/red if answer correct/incorrect
 function setAnswerColor(element, correct) {
