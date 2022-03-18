@@ -68,7 +68,7 @@ body {
     height: 3rem;
     letter-spacing: 0.5rem;
     color:#000000;
-    /*background-color:rgb(129 143 232 0.8);*/
+    background-color: #fff;
     border-radius: 20px;
     margin: 0.5rem;
     border: 1px transparent;
@@ -76,8 +76,9 @@ body {
 
 .btn:hover,
 .btn:focus {
-    /*background-color: rgba(3, 18, 114, 0.1);*/
+    background-color: rgba(3, 18, 114, 0.1);
     border: solid 2px #fff;
+    color:#fff;
 }
 
 .btn--gray {
