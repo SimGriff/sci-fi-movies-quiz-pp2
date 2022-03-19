@@ -66,9 +66,9 @@ body {
 .btn {
     width: 18rem;
     height: 3rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     color:#000000;
-    background-color: #fff;
+    background-color: rgba(226, 226, 238, 0.76);
     border-radius: 20px;
     margin: 0.5rem;
     border: 1px transparent;
@@ -76,9 +76,9 @@ body {
 
 /*.btn:active*/
 .btn:hover{
-    background-color: rgba(3, 18, 114, 0.05);
-    border: solid 2px #fff;
-    color:#fff;
+    /*background-color: rgba(3, 18, 114, 0.05);*/
+    border: solid 3px #fff;
+    /*color:#fff;*/
 }
 
 .btn--gray {
@@ -102,6 +102,7 @@ body {
     width: 8rem;
     letter-spacing: 0.2rem;
     /*background-color:rgb(129 143 232 0.8);*/
+    background-color: rgba(226, 226, 238, 0.76);
     border-radius: 20px;
     margin: 0.2rem;
     border: 1px transparent;
@@ -109,25 +110,23 @@ body {
 
 .start-btn:hover,
 .start-btn:focus {
-        background-color: rgba(3, 18, 114, 0.1);
-        color: #fff;
-        /*border: 2px #000000;*/
+        /*background-color: rgba(3, 18, 114, 0.1);*/
+        /*color: #fff;*/
+        border: solid 3px #fff;
 }
 
 .next-btn:hover,
 .next-btn:focus {
-        background-color: rgba(3, 18, 114, 0.1);
-        color: #fff;
-        /*border: solid 1px #fff;*/
+        border: solid 3px #fff;
 
 }
 /*javascript will use this class when correct answer given*/
 .btn-correct{
-    background-color: green;
+    background-color: rgba(70, 240, 54, 0.6);;
 }
 /*javascript will use this class when incorrect answer given*/
 .btn-incorrect {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.6);
 }
 
 
