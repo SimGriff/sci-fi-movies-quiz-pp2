@@ -139,7 +139,7 @@ const questions = [
         ]
     },
     {
-        question: "Name the android found by Starfleet in 2338 as sole survivor on Omicron Theta?",
+        question: "The android found by Starfleet in 2338 as sole survivor on Omicron Theta?",
         answers: [
             { text: "Wall-E", correct: false },
             { text: "Data", correct: true },
@@ -175,7 +175,7 @@ const questions = [
         ]
     },
     {
-        question: "Which Arnold Schwarzenegger movie is based on a story by Philip K. Dick??",
+        question: "Which Schwarzenegger movie is based on a story by Philip K. Dick??",
         answers: [
             { text: "The Terminator", correct: false },
             { text: "Total Recall", correct: true },
