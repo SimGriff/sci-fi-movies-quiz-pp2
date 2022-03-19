@@ -29,8 +29,13 @@ Images of Mobile, Tablet, Desktop skins for site here.
 * Design
 
   * Colour Scheme
-    1. All main text for the quiz is white #ffffff as it stands out against the background ensuring excellent readability. A semi-transparent box contains the quiz itself using rgba (3, 18, 114, 0.3) overlapping the dark background image, ensuring excellent readability. 
-    2. All text within the buttons is black (#000000), which  contrast against the light neutral background color. When selected the buttons change to green or red with the dark text standing out well against the background.
+    1. All main text for the quiz is white #ffffff as it stands out against the background image, a semi-transparent box contains the quiz itself using rgba (3, 18, 114, 0.3) overlapping the dark background image, ensuring clear readability. 
+    2. All text within the buttons is black (#000000), which  contrast against the light neutral background color. With mouseover the border is highlighted with a 3px #ffffff white. On selection the answer buttons change to a semi-transparent green or red with the dark text standing out well against the background. All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) ensuring excellent readability. 
+
+![contrast checker for neutral buttons,black text on grey button](docs/screenshots/contrast-checker-neutral-buttons.png)
+![contrast checker for green buttons,black text on green button](docs/screenshots/contrast-checker-green-buttons.png)
+![contrast checker for red buttons,black text on red button](docs/screenshots/contrast-checker-red-buttons.png)
+
   * Typography
     1. The Nova Square font from [Google Fonts](https://fonts.google.com/) is the main font used throughout the Quiz with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The futuristic appearance of the font was chosen as it perfectly matched the science fiction subject matter.
     
