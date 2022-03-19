@@ -86,7 +86,7 @@ The users progress through the game is also displayed towards the bottom of the 
 ### Results Page
 ![Screenshot of Results Page](docs/screenshots/screenshot-results-page.png) 
 
-For the final screen, the user's score is provided with a message and a restart button inviting the user to try the quiz again.
+The user's score is recorded throughout the quiz and for the final screen, the score is provided with a message and a restart button inviting the user to try the quiz again.
 
 ## Future Features
 
@@ -95,6 +95,8 @@ For the final screen, the user's score is provided with a message and a restart 
 * Sound - Audio feedback on button presses, incorrect/correct answers.
 
 ## Technologies Used
+
+Mockup Generator (https://techsini.com/multi-mockup/index.php)
 
 ### Languages Used
 
