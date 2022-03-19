@@ -20,7 +20,7 @@ getNextQuestion();
 quizProgress();
 });
 
-// Main functions
+// Main functions - Main features/structure used following video tutorial at Web Dev Simplified, this was modified to fit my quiz with many new features added
 
 // Starts running the quiz
 function startQuiz() {
@@ -56,7 +56,7 @@ function getNextQuestion() {
     questionNumber++;
 }
 
-//
+// Shows Question
 function displayQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answers => {
@@ -89,6 +89,7 @@ function chooseAnswer(event) {
     disable();
     nextButton.classList.remove("hide");
 } else {
+// setTimeout feature used following advice from Ger at Tutor Support,this allowed final question & user feedback (btn color)to be visible
     setTimeout(()  => endGame(), 1100)
 }
 }
@@ -116,6 +117,7 @@ function clearAnswerColor(element) {
     element.classList.remove("btn-incorrect");
 }
 
+// Shows final page after all questions answered,user score/message and restart button shown
 function endGame() {
     quizContainerElement.classList.add("hide");
     quizResults.classList.remove("hide");
