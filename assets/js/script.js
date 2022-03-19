@@ -139,6 +139,15 @@ const questions = [
         ]
     },
     {
+        question: "Name the android found by Starfleet in 2338 as sole survivor on Omicron Theta?",
+        answers: [
+            { text: "Wall-E", correct: false },
+            { text: "Data", correct: true },
+            { text: "Alpha", correct: false },
+            { text: "Max", correct: false },
+        ]
+    },
+    {
         question: "Which of these popular sci-fi movie franchises has the most films?",
         answers: [
             { text: "Star Trek", correct: true },
@@ -147,4 +156,68 @@ const questions = [
             { text: "Terminator", correct: false },
         ]
     },
+    {
+        question: "Which of these popular sci-fi movies is NOT based on a book?",
+        answers: [
+            { text: "Ender’s Game", correct: false },
+            { text: "Galaxy Quest", correct: true },
+            { text: "Jurassic Park", correct: false },
+            { text: "Blade Runner", correct: false },
+        ]
+    },
+    {
+        question: "Who directed the movie based on Do Androids Dream of Electric Sheep?",
+        answers: [
+            { text: "Tony Scott", correct: false },
+            { text: "Steven Spielberg", correct: false },
+            { text: "George Lucas", correct: false },
+            { text: "Ridley Scott", correct: true },
+        ]
+    },
+    {
+        question: "Which Arnold Schwarzenegger movie is based on a story by Philip K. Dick??",
+        answers: [
+            { text: "The Terminator", correct: false },
+            { text: "Total Recall", correct: true },
+            { text: "Running Man", correct: false },
+            { text: "Twins", correct: false },
+        ]
+    },
+    {
+        question: "'Judge Dredd' was based on the character from which comic?",
+        answers: [
+            { text: "Buck Rogers", correct: false },
+            { text: "2000 A.D.", correct: true },
+            { text: "Dan Dare", correct: false },
+            { text: "Flash Gordon", correct: false },
+        ]
+    },
+    {
+        question: "Which character was described as 'part man, part machine, all cop'?",
+        answers: [
+            { text: "Ro-Man", correct: false },
+            { text: "Bishop", correct: false },
+            { text: "The Terminator", correct: false },
+            { text: "Robocop", correct: true },
+        ]
+    },
+    {
+        question: "'2001: A Space Odyssey' was based on a short story by whom?",
+        answers: [
+            { text: "Arthur C. Clarke", correct: true },
+            { text: "Philip K Dick", correct: false },
+            { text: "H.G. Wells", correct: false },
+            { text: "Frank Herbert", correct: false },
+        ]
+    },
+    {
+        question: "What was the title of the 2016 Star Trek movie outing?",
+        answers: [
+            { text: "The Wrath of Khan", correct: false },
+            { text: "Nemesis", correct: false },
+            { text: "Star Trek", correct: false },
+            { text: "Beyond", correct: true },
+        ]
+    },
+
 ];
