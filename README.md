@@ -58,25 +58,41 @@ The wireframes for the Sci-Fi Movies Quiz were produced using Balsamiq.
 
 ## Features
 
-The Sci-Fi Movies Quiz is made up of 3 main sections.
+The Sci-Fi Movies Quiz is made up of 3 main sections, the Start Page, Questions and Answers Page and finally, the Results Page.
+
 ### Start page
-![Screenshot of Start Page](docs/screenshots/………….png) Add Screen Shots on Completion of Quiz
+
+![Screenshot of background image of alien planet](docs/screenshots/screenshot-background-image.png) 
+
 The start page invites the user to begin the game. The background image draws the users attention with the eye catching image displaying a sci fi theme. This immediately conveys the subject of the site.
-When the user clicks on the Start Button, they are taken to the question and answers screen. The white text and the same background image, with transparent overlay box are used on all three pages and provide continuity throughout the quiz pages.
+
+![Screenshot of start screen with start button](docs/screenshots/screenshot-start-page.png) 
+
+The title of the quiz is displayed prominantly at the top center of the page in the selected Nova Square font with an added dark shadow to draw the users attention.
+When the user clicks on the Start Button, they are taken to the question and answers screen. The white text and the same background image, with transparent overlay box, along with the main quiz heading are used on all three pages and provide continuity throughout the quiz pages.
+
 ### Questions and Answers Page 
-![Screenshot of Questions and Answers Page](docs/screenshots/………….png) Add Screen Shots on Completion of Quiz
+
+![Screenshot of Questions and Answers Page](docs/screenshots/screenshot-questions-page1.png) 
+
 This page provides a single question and multiple choice options for the answer with four answer buttons. 
-On click of the mouse the user makes their selection by selecting one of the answer buttons, they are then provided with instant feedback that informs them if the answer is correct or not.  This is shown with the correct button being highlighted green and all the correct answers highlighted red. The user is remined of their own selection because the selected button has a clear orange border. 
+On click of the mouse the user makes their selection by selecting one of the answer buttons, on mouseover the border of the answer button is highlighted white. On selection of an answer the user is then provided with instant feedback that informs them if the answer is correct or not.  This is shown with the selected button turning green for correct or red for incorrect.
+
+![Screenshot of Selected Button highlighted green](docs/screenshots/screenshot-questions-page-answer.png) 
+
 The user is then presented with the next button underneath the answers that allows them to proceed to the next question.
-The users progress through the game is also displayed towards the bottom of the screen, e.g. Question 1 of 10, notifying the user what question they are on and the total number of questions.
+The users progress through the game is also displayed towards the bottom of the screen, e.g. Question 1 of 10, notifying the user what question they are on and the total number of questions in the quiz.
+
 ### Results Page
-![Screenshot of Results Page](docs/screenshots/…………..png) Add Screen Shots on Completion of Quiz
-For the final screen, the users score is provided with a message and a restart button inviting the user to try the quiz again.
+![Screenshot of Results Page](docs/screenshots/screenshot-results-page.png) 
+
+For the final screen, the user's score is provided with a message and a restart button inviting the user to try the quiz again.
 
 ## Future Features
 
-* Additional levels of difficulty, easy, average, hard to challenge the user. 
+* Additional levels of difficulty, easy, average, hard to challenge the user's knowledge.
 * Additional categories including Sci-Fi TV questions, Sci Fi Literature etc.
+* Sound - Audio feedback on button presses, incorrect/correct answers.
 
 ## Technologies Used
 
