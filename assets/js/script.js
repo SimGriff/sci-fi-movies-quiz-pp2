@@ -81,7 +81,7 @@ function resetPage() {
 
 // Responds to users selection, providing feedback on correct/incorrect answer
 function chooseAnswer(event) {
-    selectedButton = event.target;
+    const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
     correctAnswers(correct);/*got really stuck on the score increment - stackoverflow solution to similar problem*/
     setAnswerColor(selectedButton, correct);/*got really stuck on limiting color change to selected button - stackoverflow solution to similar problem*/
@@ -89,14 +89,9 @@ function chooseAnswer(event) {
     disable();
     nextButton.classList.remove("hide");
 } else {
-    quizResults.classList.remove("hide");
-    disable();
-    quizResults.innerText = "Your Score " + score + "/" + questions.length + " Well Done!";
-    startButton.classList.remove("hide");
-    startButton.innerText="Restart";
-    }
+    endGame();
 }
-
+}
 // from stackoverflow & W3Schools this disabled all buttons including next.Changed start/next to have their own class to fix
 function disable() {
     let buttons = document.querySelectorAll('.btn') /*selects all btn class*/
@@ -119,6 +114,15 @@ function setAnswerColor(element, correct) {
 function clearAnswerColor(element) {
     element.classList.remove("btn-correct");
     element.classList.remove("btn-incorrect");
+}
+
+function endGame() {
+    quizContainerElement.classList.add("hide");
+    quizResults.classList.remove("hide");
+    disable();
+    quizResults.innerText = "Your Score " + score + "/" + questions.length + "\r\n Well Done!";
+    startButton.classList.remove("hide");
+    startButton.innerText="Restart";
 }
 
 // My list  of Questions

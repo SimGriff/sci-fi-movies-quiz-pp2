@@ -74,9 +74,9 @@ body {
     border: 1px transparent;
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: rgba(3, 18, 114, 0.1);
+/*.btn:active*/
+.btn:hover{
+    background-color: rgba(3, 18, 114, 0.05);
     border: solid 2px #fff;
     color:#fff;
 }
