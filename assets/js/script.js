@@ -89,7 +89,7 @@ function chooseAnswer(event) {
     disable();
     nextButton.classList.remove("hide");
 } else {
-    endGame();
+    setTimeout(()  => endGame(), 1100)
 }
 }
 // from stackoverflow & W3Schools this disabled all buttons including next.Changed start/next to have their own class to fix
