@@ -214,3 +214,39 @@ $ git clone https://github.com/SimGriff/dragon-karate-academy-pp1
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+## Credits
+
+### Code
+
+* [Web Dev Simplified:] (https://www.youtube.com/watch?v=riDzcEQbX6k&t=1455s)
+Video tutorial at Web Dev Simplified, was a useful starting point for my project as it clearly set out the structure of a typical JavaScript quiz. Basic code from this was used to structure my own quiz. Code was altered and structured to fit my quiz with many new features added. 
+
+* [Stack Overflow:](https://stackoverflow.com/)
+Stack Overflow was referred on numerous occasions during the development of this project. It was a useful resource for finding out how functions and javaScript worked in general. Code was used from the site in the following instances.
+This post was used to help disable answer buttons in my quiz. (https://stackoverflow.com/questions/68418209/javascript-how-do-disable-multiple-buttons-in-javascript-after-the-user-clicks)
+This post was used to help with my issue with the score increment and limiting colour change to selected buttons. (https://stackoverflow.com/questions/68687270/increment-score-in-a-quiz-game-based-on-selecting-the-right-answers-with-an-obje)
+
+* [W3Schools:](https://www.w3schools.com/)
+W3 Schools was another site that provided invaluable information in general on all aspects of html, css and JavaScript including layout issues and creating functions.
+
+* Mentor Support:
+With the help of my mentor the project got off to a flying start with support provided on the initial structure of the quiz.
+
+* Code Institute Tutor Support:
+Tutor Support also helped to resolve issues during the project. Without the support, I would not have been able to finish the project by the deadline.
+
+### Media
+
+* The wireframes were created using Balsamiq[Balsamiq.](https://balsamiq.com/)
+* The font came from [Google Fonts](https://fonts.google.com/)
+* Image is from [pixabay](https://pixabay.com/) with a Free to use license.
+ 
+
+
+### Acknowledgements 
+* My mentor for his feedback, helping me start and plan the project. 
+
+* My friends and family for their continuing support during this course and helping me test the quiz.
+
+* The Code Institute tutors who have responded quickly to my queries and added to my knowledge of the subject.
