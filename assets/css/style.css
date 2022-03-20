@@ -24,7 +24,6 @@ body {
     box-sizing: border-box;
     justify-content: center;
     font-size: 2rem;
-    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     padding: 0.5rem;
@@ -38,7 +37,7 @@ body {
 
 #quiz-question {
     font-size: 1.5rem;
-    margin: 1rem;
+    margin-top: 1rem;
 }
 
 #quiz-selection {
@@ -53,6 +52,7 @@ body {
 
 #quiz-results {
     font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* --------- Buttons */

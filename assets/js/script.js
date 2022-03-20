@@ -122,7 +122,7 @@ function endGame() {
     quizContainerElement.classList.add("hide");
     quizResults.classList.remove("hide");
     disable();
-    quizResults.innerText = "Your Score " + score + "/" + questions.length + "\r\n Well Done!";
+    quizResults.innerText = "Your Score \r\n" + score + "/" + questions.length + "\r\n Well Done!";
     startButton.classList.remove("hide");
     startButton.innerText="Restart";
 }
