@@ -10,7 +10,6 @@ const quizContainerElement = document.getElementById("quiz-question-container");
 const questionElement = document.getElementById("quiz-question");
 const answerButtonsElement = document.getElementById("quiz-selection");
 const quizResults = document.getElementById("quiz-results");
-const yourScore = document.getElementById("your-score");
 
 // Declare let variables added
 let shuffledQuestions;

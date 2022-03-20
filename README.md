@@ -137,6 +137,32 @@ The contrast checker used for this project.
 
 ## Testing
 
+Throughout the project I have been using DevTools on the Chrome browser to test changes to the HTML and CSS code. I have committed regularly and included detailed messages detailing the changes made.
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### W3C Markup Validator results
+![HTML home page validation](docs/testing/w3c-markup-validator-results.png)
+
+ ### W3C CSS Validator results:
+![CSS validation](docs/testing/w3c-css-validator-results.png)
+
+### JSHint results:
+![ JSHint]( )
+No errors were returned  in the HTML, CSS or JS files. 
+
+### Lighthouse Testing
+For the Lighthouse testing I achieved 100 on all categories except for SEO, which only reached a score of 87, when I checked the META descriptions hadn’t been added in my html, I added these and retested with scores of 100 in all categories. 
+![Lighthouse first test](docs/testing/lighthouse-first-run.png)
+![Lighthouse successful test](docs/testing/lighthouse-success.png)
+
+### Manual Testing
+The website has been tested on different browsers including Google Chrome, Internet Explorer, Microsoft Edge and Mozilla Firefox and Safari. Large monitors (LG, HP, Dell), laptops (MacBook, ASUS VivoBook 15), tablets (iPad 8), and mobile devices (Samsung S8, Samsung S20, iPhone 13, Samsung Galaxy A5). 
+Chrome DevTools was also used to test the quiz on a number of devices including, iPhone SE, iPhone XR, iPhone 12 Pro, Pixel 5, Samsung Galaxy S8+, Samsung Galaxy S20 Ultra, Samsung Galaxy A51/71, Nest Hub and Nest Hub Max.
+All quiz features were tested on these devises with no issues with responsiveness or functionality.
+Friends and family members were asked to review the quiz and test its responsiveness, they reported no user experience issues.
+
+
 ## Deployment
 
 ### GitHub Pages
