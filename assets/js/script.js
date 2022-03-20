@@ -131,9 +131,9 @@ function finalMessage(){
     if (score < 4) {
         return "Better Luck Next Time";
       } else if (score > 4 && score < 10) {
-        "Well Done!"; 
+        return "Well Done!"; 
       } else {
-        "Perfect Score!";
+        return "Perfect Score!";
       }
     }
 
