@@ -122,10 +122,20 @@ function endGame() {
     quizContainerElement.classList.add("hide");
     quizResults.classList.remove("hide");
     disable();
-    quizResults.innerText = "Your Score \r\n" + score + "/" + questions.length + "\r\n Well Done!";
+    quizResults.innerText = "Your Score \r\n" + score + "/" + questions.length + "\r\n" + finalMessage();
     startButton.classList.remove("hide");
     startButton.innerText="Restart";
 }
+// Message to be displayed on results page-dependant on user's score
+function finalMessage(){
+    if (score < 4) {
+        return "Better Luck Next Time";
+      } else if (score > 4 && score < 10) {
+        "Well Done!"; 
+      } else {
+        "Perfect Score!";
+      }
+    }
 
 // My list  of Questions
 const questions = [
