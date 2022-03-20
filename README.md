@@ -112,16 +112,29 @@ Mockup Generator (https://techsini.com/multi-mockup/index.php)
 Balsamiq was used to create the wireframes during the design process.
 
 * [Google Fonts:](https://fonts.google.com/)
-Google fonts were used to import the ‘Oswald’ and ‘Roboto’' fonts into the style.css file which is used on all pages throughout the project.
+Google fonts were used to import the ‘Nova Square’ font into the style.css file which is used on all pages throughout the project.
 
-* [Font Awesome:](https://fontawesome.com/)
-Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+Used throughout the project to view and edit the site in real time and discover issues and solutions.
+
+* [Techsini:](https://techsini.com/multi-mockup/index.php)
+To produce mockup image accross multiple devices.
+
+* [Gitpod:]((https://gitpod.io/projects)
+This was the code editor used throughout the project.
 
 * [Git:](https://git-scm.com/)
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
 * [GitHub:](https://github.com/)
 Github was used to host and deploy the website.
+
+* [pixlr.com:](https://pixlr.com/e)
+The PIXLR website was used to resize my background image and image editing for this project.
+
+* [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer)
+The contrast checker used for this project.
+
 
 ## Testing
 
