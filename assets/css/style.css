@@ -117,7 +117,7 @@ body {
 
 /*javascript will use this class when correct answer given*/
 .btn-correct{
-    background-color: rgba(70, 240, 54, 0.6);;
+    background-color: rgba(70, 240, 54, 0.6);
 }
 /*javascript will use this class when incorrect answer given*/
 .btn-incorrect {

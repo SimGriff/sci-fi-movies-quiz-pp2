@@ -1,13 +1,11 @@
 # Sci-Fi Movies Quiz
 
-/*Screenshot of mockup*/
+![Screenshot of mockup](docs/screenshots/mockup-screenshot.png)
 
 View the deployed site here: https://simgriff.github.io/sci-fi-movies-quiz-pp2/
 
 ## Introduction
-The Sci-Fi movies Quiz game is a multiple choice quiz that tests the user’s knowledge of science fiction movies. The aim of the website was to build a fun, responsive quiz using JavaScript. It is designed to be responsive and accessible on a range of devices, ensuring that it leads to an engaging user experience. 
-
-Images of Mobile, Tablet, Desktop skins for site here.
+The Sci-Fi movies Quiz game is a multiple choice quiz that tests your knowledge of science fiction movies. There are ten questions in total with four possible answers for each question. The aim of the website was to build a fun, responsive quiz using JavaScript. It is designed to be responsive and accessible on a range of devices, ensuring that it leads to an engaging user experience. 
 
 ## User Experience (UX)
 * User Stories 
@@ -21,26 +19,27 @@ Images of Mobile, Tablet, Desktop skins for site here.
 
   * Returning Visitor Goals
     1. As a Returning Visitor, I want to try to beat my previous score.
+    2. As a Returning Visitor, I would like the questions to be shuffled.
     
   * Frequent User Goals
     1. As a Frequent User, I want to add to my existing knowledge of the subject by improving my score.
-    2. As a Frequent User, I would like to adjust the difficulty of the questions. (This could be under Future Features).
+    
 
 * Design
 
   * Colour Scheme
-    1. All main text for the quiz is white #ffffff as it stands out against the background image, a semi-transparent box contains the quiz itself using rgba (3, 18, 114, 0.3) overlapping the dark background image, ensuring clear readability. 
-    2. All text within the buttons is black (#000000), which  contrast against the light neutral background color. With mouseover the border is highlighted with a 3px #ffffff white. On selection the answer buttons change to a semi-transparent green or red with the dark text standing out well against the background. All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) ensuring excellent readability. 
+    1. All main text for the quiz is white #ffffff as it stands out against the background image, a semi-transparent box contains the quiz itself using rgba(3, 18, 114, 0.3) overlapping the dark background image, ensuring clear readability. 
+    2. All text within the buttons is black (#000000), which  contrast against the light neutral background color. With mouseover the border is highlighted with a 3px #ffffff white. On selection the answer buttons change to a semi-transparent green rgba(70, 240, 54, 0.6) or red rgba(255, 0, 0, 0.6) with the dark text standing out well against the background. All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) using the corresponding hex values for the  analyser ensuring excellent readability. 
 
 ![contrast checker for neutral buttons,black text on grey button](docs/screenshots/contrast-checker-neutral-buttons.png)
 ![contrast checker for green buttons,black text on green button](docs/screenshots/contrast-checker-green-buttons.png)
 ![contrast checker for red buttons,black text on red button](docs/screenshots/contrast-checker-red-buttons.png)
 
-  * Typography
-    1. The Nova Square font from [Google Fonts](https://fonts.google.com/) is the main font used throughout the Quiz with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The futuristic appearance of the font was chosen as it perfectly matched the science fiction subject matter.
+* Typography
+    1. The Nova Square font from [Google Fonts](https://fonts.google.com/) is the main font used throughout the Quiz with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The futuristic appearance of the font was chosen as it perfectly matched the science fiction subject matter. The website has imported the Nova Square font into the CSS file from Google Fonts.
     
 * Imagery
-    1. The main background image is designed to attract new users to the Quiz with its other worldly image.
+    1. The main background image of an alien planet is designed to attract new users to the Quiz with its other worldly image.
     2. The main background image used for the quiz is from [pixabay](https://pixabay.com/) with a Free to use license.
 
 ## Wireframes
