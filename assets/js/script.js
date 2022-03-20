@@ -103,7 +103,7 @@ function chooseAnswer(event) {
 }
 }
 
-/* Function from stackoverflow & W3Schools, this disabled all buttons including next,preventing multiple selections on one question.
+/* Function from stackoverflow & W3Schools, this disabled all answer buttons,preventing multiple selections on one question.
 (https://stackoverflow.com/questions/68418209/javascript-how-do-disable-multiple-buttons-in-javascript-after-the-user-clicks)
 */
 function disable() {
