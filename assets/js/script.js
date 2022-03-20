@@ -1,28 +1,34 @@
-// Variables added
+/*Video tutorial at Web Dev Simplified (https://www.youtube.com/watch?v=riDzcEQbX6k&t=1455s), 
+basic code from this was used to structure my own quiz. Code was modified to fit my quiz with 
+many new features added
+*/
+
+// Declared const variables added
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const quizContainerElement = document.getElementById("quiz-question-container");
 const questionElement = document.getElementById("quiz-question");
 const answerButtonsElement = document.getElementById("quiz-selection");
-/*const quizProgress = document.getElementById("quiz-progress");*/
 const quizResults = document.getElementById("quiz-results");
 const yourScore = document.getElementById("your-score");
 
+// Declare let variables added
 let shuffledQuestions;
 let currentQuestionIndex;
 let questionNumber = 0;
-let score = 0; /* keeping track of user score (correct answers) */
+let score = 0; 
 
+// Event Listener to start quiz
 startButton.addEventListener("click", startQuiz);
+
+// Event Listener for next button
 nextButton.addEventListener("click", () => {
 currentQuestionIndex++;
 getNextQuestion();
 quizProgress();
 });
 
-// Main functions - Main features/structure used following video tutorial at Web Dev Simplified, this was modified to fit my quiz with many new features added
-
-// Starts running the quiz
+// Starts running the main quiz loop
 function startQuiz() {
     quizResults.classList.add("hide");
     startButton.classList.add("hide");
@@ -79,12 +85,16 @@ function resetPage() {
     }
 }
 
-// Responds to users selection, providing feedback on correct/incorrect answer
+/* Responds to users selection, providing feedback on correct/incorrect answer.
+I had issues with the score increment & limiting color change to selected button  
+within this function - stackoverflow solutions to similar problems helped to resolve
+see (https://stackoverflow.com/questions/68687270/increment-score-in-a-quiz-game-based-on-selecting-the-right-answers-with-an-obje)
+*/
 function chooseAnswer(event) {
     const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
-    correctAnswers(correct);/*got really stuck on the score increment - stackoverflow solution to similar problem*/
-    setAnswerColor(selectedButton, correct);/*got really stuck on limiting color change to selected button - stackoverflow solution to similar problem*/
+    correctAnswers(correct);
+    setAnswerColor(selectedButton, correct);
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
     disable();
     nextButton.classList.remove("hide");
@@ -93,9 +103,12 @@ function chooseAnswer(event) {
     setTimeout(()  => endGame(), 1100)
 }
 }
-// from stackoverflow & W3Schools this disabled all buttons including next.Changed start/next to have their own class to fix
+
+/* Function from stackoverflow & W3Schools, this disabled all buttons including next,preventing multiple selections on one question.
+(https://stackoverflow.com/questions/68418209/javascript-how-do-disable-multiple-buttons-in-javascript-after-the-user-clicks)
+*/
 function disable() {
-    let buttons = document.querySelectorAll('.btn') /*selects all btn class*/
+    let buttons = document.querySelectorAll('.btn')
     for(let i = 0; i < buttons.length; i++){
         buttons[i].disabled = true;
     }
@@ -126,7 +139,8 @@ function endGame() {
     startButton.classList.remove("hide");
     startButton.innerText="Restart";
 }
-// Message to be displayed on results page-dependant on user's score
+
+// Produces message-dependant on user's score on results page
 function finalMessage(){
     if (score < 4) {
         return "Better Luck Next Time";
