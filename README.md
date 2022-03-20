@@ -162,6 +162,17 @@ Chrome DevTools was also used to test the quiz on a number of devices including,
 All quiz features were tested on these devises with no issues with responsiveness or functionality.
 Friends and family members were asked to review the quiz and test its responsiveness, they reported no user experience issues.
 
+### Fixed Bugs
+- The first issue I had was with the background image, it was not displaying, image had been added to the images folder. This turned out to be a simple error, leaving URL off url("../images/horizon.jpg"). This turned out to be a simple error with a straightforward fix.
+- Score count was not functioning as intended. Score count was doubling, I noticed that I had left score++ in my setAnswerColor function along with another score++ in my correctAnswer function. Thuis was resolved by removing score++ from the setAnswer function.
+
+- While testing my answer buttons I discovered that a user could select every answer button for each question resulting in a perfect score each time. I needed some way of disabling the other buttons and allowing only one answer selection for each question. Through a google search I found a solution at stackoverflow & W3Schools, a function that disabled all answer buttons, preventing multiple selections on one question.
+(https://stackoverflow.com/questions/68418209/javascript-how-do-disable-multiple-buttons-in-javascript-after-the-user-clicks)
+![disable function code](docs/screenshots/screenshot-disable-function.png)
+
+- Major issue I had great difficulty with happened right at the end of the project. When a user selects an answer button, the button is either highlighted in green(correct) or red(incorrect). This happened as planned except for the last question, where the user clicked on the answer and the page immediately jumped to the final results screen without displaying the red/green button. Following help from Tutor Support , it was suggested that I used a timeout to allow the button color to display before the last screen loaded. This worked perfectly, it turned out that the page was loading too quickly for the user to see the button change colour.
+![Code that solved the button change issue](docs/screenshots/screenshot-button-error.png)
+
 
 ## Deployment
 
