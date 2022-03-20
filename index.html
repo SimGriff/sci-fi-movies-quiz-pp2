@@ -4,46 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Oswald:wght@300;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sci-Fi Movies Quiz</title>
 </head>
 
 <body>
     <div class="quiz-container">
-        <h1 class="heading">Sci-Fi Movies Quiz</h1><!--Not sure if I want a logo here?-->
+        <!-- Quiz main title -->
+        <h1 class="heading">Sci-Fi Movies Quiz</h1>
+        <!-- Questions and Answers Section-->
         <div id ="quiz-question-container" class = "hide">
             <div id="quiz-question">
                 <h4>What is the answer to this Sci-Fi Question?</h4>
             </div>
             <div id="quiz-selection">
-                <!--Buttons need to go in here * 4-->
-                <button class="btn btn--gray">Answer A</button>
-                <button class="btn btn--gray">Answer B</button>
-                <button class="btn btn--gray">Answer C</button>
-                <button class="btn btn--gray">Answer D</button>
+                <button class="btn">A</button>
+                <button class="btn">B</button>
+                <button class="btn">C</button>
+                <button class="btn">D</button>
             </div>
             <div id ="quiz-progress">
             </div>
         </div>
+        <!-- Results to appear on final page -->
         <div id="quiz-results" class = "hide">
-            <h3 id = "your-score">Your Score</h3><!--Placeholder text, I want javascript to control this-->
-                <p>9/10</p><!--Placeholder text, I want javascript to control this-->
-                <hr>
-                <p>Well Done!</p><!--Placeholder text, I want javascript to control this-message to change depending on result-->
+        <!-- JavaScript will populate the text for this section -->
         </div>
         <div class="main-buttons">
-            <!--Start/begin and next buttons-->
+            <!--Start/restart and next main buttons-->
             <button class="start-btn" id = "start-btn">Start</button>
             <button class="hide next-btn" id = "next-btn">Next</button>
         </div>
     </div>
-
-    
     <script src="assets/js/script.js"></script>
 </body>
 </html>

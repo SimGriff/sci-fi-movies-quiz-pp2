@@ -1,7 +1,10 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oswald:wght@300;500&family=Roboto:wght@300;400;700&display=swap');
+
 /* --------- General style */
 
 body {
-    /*background-color:blueviolet;*/
     background: url("../images/horizon.jpg") no-repeat center center;
     background-size: cover;
     font-family: "nova square", sans-serif;
@@ -74,24 +77,9 @@ body {
     border: 1px solid #5a5499;
 }
 
-/*.btn:active*/
 .btn:hover{
-    /*background-color: rgba(3, 18, 114, 0.05);*/
     border: solid 3px #fff;
-    /*color:#fff;*/
 }
-
-.btn--gray {
-    margin-top: 30px;
-    background-color: #484466;
-    border: 1px transparent;
-    border-radius: 40px;
-}
-
-/*.btn--gray:active,
-.btn--gray:hover {
-    background-color: #1069c2;
-}*/
 
 .start-btn {
     font-size: 1.4rem;
@@ -99,7 +87,6 @@ body {
     padding: 10px 20px;
     width: 8rem;
     letter-spacing: 0.1rem;
-    /*background-color:rgb(129 143 232 0.8);*/
     background-color: rgba(226, 226, 238, 0.76);
     border-radius: 20px;
     margin: 5rem;
@@ -112,7 +99,6 @@ body {
     padding: 10px 20px;
     width: 8rem;
     letter-spacing: 0.1rem;
-    /*background-color:rgb(129 143 232 0.8);*/
     background-color: rgba(226, 226, 238, 0.76);
     border-radius: 20px;
     margin: 0.2rem;
@@ -121,16 +107,14 @@ body {
 
 .start-btn:hover,
 .start-btn:focus {
-        /*background-color: rgba(3, 18, 114, 0.1);*/
-        /*color: #fff;*/
         border: solid 3px #fff;
 }
 
 .next-btn:hover,
 .next-btn:focus {
         border: solid 3px #fff;
-
 }
+
 /*javascript will use this class when correct answer given*/
 .btn-correct{
     background-color: rgba(70, 240, 54, 0.6);;
@@ -140,7 +124,7 @@ body {
     background-color: rgba(255, 0, 0, 0.6);
 }
 
-
+/* --------- Hide */
 .hide {
     display: none;
 }
