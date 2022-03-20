@@ -98,7 +98,6 @@ The user's score is recorded throughout the quiz and displayed to the user on th
 
 ## Technologies Used
 
-Mockup Generator (https://techsini.com/multi-mockup/index.php)
 
 ### Languages Used
 
